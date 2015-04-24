@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export LC_ALL=C
+export DEBIAN_FRONTEND=noninteractive
+
+prog=$1
+shift
+exec "$prog" "$@"
