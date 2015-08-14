@@ -21,6 +21,6 @@ RUN \
 ENV LANG en_US.utf8
 
 # Add s6 overlay (https://github.com/just-containers/s6-overlay)
-ADD https://github.com/just-containers/s6-overlay/releases/download/v1.9.1.1/s6-overlay-portable-amd64.tar.gz /tmp/s6-overlay.tar.gz
+ADD https://github.com/just-containers/s6-overlay/releases/download/v1.14.0.0/s6-overlay-amd64.tar.gz /tmp/s6-overlay.tar.gz
 RUN tar xvfz /tmp/s6-overlay.tar.gz -C /
 ENTRYPOINT ["/init"]
